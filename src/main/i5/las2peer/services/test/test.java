@@ -118,7 +118,7 @@ public class test extends RESTService {
     if(testResponse_condition) {
       JSONObject testResult = new JSONObject();
 
-      
+      testResult.put("testKey", "testValue");
 
       return Response.status(HttpURLConnection.HTTP_OK).entity(testResult.toJSONString()).build();
     }
